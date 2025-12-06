@@ -11,6 +11,7 @@ function App() {
             <Navbar />
             <Routes>
                 {/* main page or shop of the products */}
+                {/* also made it an empty tag */}
                 <Route path="/" />
                 {/* cart page path */}
                 <Route path="/cart" />
