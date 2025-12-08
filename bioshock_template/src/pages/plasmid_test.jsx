@@ -141,6 +141,26 @@ function App() {
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+          <img 
+            src={possession_poster}
+            alt="possession poster"
+          />
+
+          <img 
+            src={possession_bottle} 
+            alt="possession bottle" 
+            className={`poster ${spin.has(6) ? 'spin' : ''}`}
+            onClick={() => handleClick(6)} // on click start spinning
+            onAnimationEnd={() => stopSpin(6)} // stop spinning
+            />
+          <h3>Fink's Undertow Vigor</h3>
+          <p>
+            Ah, now thats a classic old japanese stye max, or is that chinese style?
+          </p>
+        </div>
+
+
+        <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
 
           <img
             src={return_sender_poster}
@@ -149,7 +169,7 @@ function App() {
 
           <img 
             src={return_sender_bottle} 
-            alt="grog peeach" 
+            alt="return to sender bottle" 
             className={`poster ${spin.has(4) ? 'spin' : ''}`}
             onClick={() => handleClick(4)} // on click start spinning
             onAnimationEnd={() => stopSpin(4)} // stop spinning
@@ -188,12 +208,12 @@ function App() {
 
           <img 
             src={undertow_bottle} 
-            alt="japanese max" 
+            alt="undertow bottle" 
             className={`poster ${spin.has(6) ? 'spin' : ''}`}
             onClick={() => handleClick(6)} // on click start spinning
             onAnimationEnd={() => stopSpin(6)} // stop spinning
             />
-          <h3>Japanese Max Grog Poster</h3>
+          <h3>Fink's Undertow Vigor</h3>
           <p>
             Ah, now thats a classic old japanese stye max, or is that chinese style?
           </p>

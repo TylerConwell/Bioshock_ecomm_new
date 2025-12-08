@@ -15,6 +15,9 @@ function App() {
                 <Route path="/" />
                 {/* cart page path */}
                 <Route path="/cart" />
+
+                {/* plasmid test page path */}
+                <Route path="/plasmid_test" />
             </Routes>
         </Router>
         </div>;

@@ -5,11 +5,6 @@
   text-align: center;
 }
 
-.fun_button {
-  padding: 2em;
-}
-
-
 /* Gallery layout: responsive grid that places items side-by-side */
 .gallery {
   display: grid;
