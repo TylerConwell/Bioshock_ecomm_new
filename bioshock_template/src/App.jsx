@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+// imports needed for react router dom to work, first time using it
+import {Navbar} from "./components/navbar.jsx"
 
 function App() {
-  const [count, setCount] = useState(0)
+    return <div className="App">
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        <Router>
+            {/* adding the navbar above to its in all pages */}
+            <Navbar />
+            <Routes>
+                {/* main page or shop of the products */}
+                {/* also made it an empty tag */}
+                <Route path="/" />
+                {/* cart page path */}
+                <Route path="/cart" />
+            </Routes>
+        </Router>
+        </div>;
 }
 
-export default App
+export default App;
