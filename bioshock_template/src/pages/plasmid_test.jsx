@@ -27,8 +27,6 @@ import undertow_poster from '../assets/undertow_poster.png'
 import './plasmid_test.css'
 
 function App() {
-  // simple click counter for stimming, may add sound later
-  const [count, setCount] = useState(0)
 
   // state for spinning images on click, may make a dark version later
   // state var. for spin which is a set with number (poster id) type in it
@@ -56,113 +54,140 @@ function App() {
 
   return (
     <>
-      {/* working title for the gallery */}
-      <h1>Cold Ones Art Gallery</h1>
-
-      {/* Stim button for randomly pressing */}
-      <div className="fun_button">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Wow you clicked this button {count} times
-        </button>
-
-        <p>
-          Incase you needed a way to relieve stress, 
-          or use it as a voting mechanism since I havent made one yet.
-        </p>
-      </div>
+      {/* working title for the plasmid/vigor */}
+      <h1>Ryan And Fink's Plasmid and Vigor's</h1>
 
       <section className="gallery">
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
 
           {/* first index for the id spinning */}
           <img 
-            src={beerju} 
-            alt="beerju coldones" 
+          src= {bucking_poster}
+          alt="bucking bronco poster"
+          /> 
+
+          {/* adding the vigor that will spin when clicked */}
+          <img 
+            src={bucking_bronco} 
+            alt="fink's bucking bronco vigor" 
             className={`poster ${spin.has(0) ? 'spin' : ''}`}
             onClick={() => handleClick(0)} // on click start spinning
             onAnimationEnd={() => stopSpin(0)} // stop spinning
           />
-          <h3>Beerju Poster</h3>
+          <h3>Fink's bucking bronco vigor</h3>
           <p>
-            So, like from what I see its a beer and a big one at that,
-            and its walking around destroying stuff.
+            Knock your enemies for a loop and keep them hanging high!
           </p>
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+
           <img 
-            src={skull} 
-            alt="coldones org" 
+          src= {charge_poster}
+          alt="charge poster"
+          />
+
+          <img 
+            src={charge_bottle} 
+            alt="charge vigor" 
             className={`poster ${spin.has(1) ? 'spin' : ''}`}
             onClick={() => handleClick(1)} // on click start spinning
             onAnimationEnd={() => stopSpin(1)} // stop spinning
           />
-          <h3>Cold Ones Skull Poster</h3>
+          <h3>Fink's Charge Vigor</h3>
           <p>
-            Some kinda bottom text with a skull and a concrete dog. What the dog doing?
+            Blow your enemies away with a powerful CHARGE! Deliver tornado blows or hold and release to devastate your enemies.
           </p>
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+          
           <img 
-            src={grape} 
-            alt="grog grape" 
+          src= {devils_poster}
+          alt="devils kiss poster"
+          />
+          
+          <img 
+            src={devils_bottle} 
+            alt="devils kiss vigor" 
             className={`poster ${spin.has(2) ? 'spin' : ''}`}
             onClick={() => handleClick(2)} // on click start spinning
             onAnimationEnd={() => stopSpin(2)} // stop spinning
           />
-          <h3>Grape Grog Poster</h3>
+          <h3>Fink's Devils Kiss Vigor</h3>
           <p>
-            A lovey grape grop would hit pretty good right now.
-            Mmmmm.
+            A civilized man has power over fire. A refined man handles fire with finesse: DEVIL'S KISS.
           </p>
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+
+          <img
+            src={murder_crows}
+            alt="murder of crows poster"
+          />
+          
           <img 
-            src={lemon} 
-            alt="grog lemonice" 
+            src={murder_crows_bottle} 
+            alt="murder_of_crows" 
             className={`poster ${spin.has(3) ? 'spin' : ''}`}
             onClick={() => handleClick(3)} // on click start spinning
             onAnimationEnd={() => stopSpin(3)} // stop spinning
           />
-          <h3>Lemon Ice Grog Poster</h3>
+          <h3>Fink's Murder of Crows</h3>
           <p>
-            Hold up is that a Lemon Ice Grog? Yea i'll take two.
+            Stun and damage your enemies with a thousand needling beaks.
           </p>
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+
+          <img
+            src={return_sender_poster}
+            alt="return to sender poster"
+          />
+
           <img 
-            src={peeach} 
+            src={return_sender_bottle} 
             alt="grog peeach" 
             className={`poster ${spin.has(4) ? 'spin' : ''}`}
             onClick={() => handleClick(4)} // on click start spinning
             onAnimationEnd={() => stopSpin(4)} // stop spinning
           />
-          <h3>Peach Grog Poster</h3>
+          <h3>Fink's Return to Sender Vigor</h3>
           <p>
-            Wait wait wait your telling me they have Peach Grog now?
+            Send your enemies' attacks back where they came from!
           </p>
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+
           <img 
-            src={chad} 
-            alt="japanese chad" 
+            src={shock_jockey_poster}
+            alt="shock  jockey poster"
+          />
+
+          <img 
+            src={shock_jockey_bottle} 
+            alt="shock jockey vigor" 
             className={`poster ${spin.has(5) ? 'spin' : ''}`}
             onClick={() => handleClick(5)} // on click start spinning
             onAnimationEnd={() => stopSpin(5)} // stop spinning
           />
-          <h3>Japanese Chad Grog Poster</h3>
+          <h3>Fink's Shock Jockey Vigor</h3>
           <p>
-            Some kinda old japanese themed Chad from cold ones. JojiVlogs?
+            Harness the power of electricity and keep your enemies on their toes with SHOCK JOCKEY!
           </p>
         </div>
 
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
           <img 
-            src={max} 
+            src={undertow_poster}
+            alt="undertow poster"
+          />
+
+          <img 
+            src={undertow_bottle} 
             alt="japanese max" 
             className={`poster ${spin.has(6) ? 'spin' : ''}`}
             onClick={() => handleClick(6)} // on click start spinning
@@ -171,20 +196,6 @@ function App() {
           <h3>Japanese Max Grog Poster</h3>
           <p>
             Ah, now thats a classic old japanese stye max, or is that chinese style?
-          </p>
-        </div>
-
-        <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
-          <img 
-            src={mexicanMax} 
-            alt="max chuco" 
-            className={`poster ${spin.has(7) ? 'spin' : ''}`}
-            onClick={() => handleClick(7)} // on click start spinning
-            onAnimationEnd={() => stopSpin(7)} // stop spinning
-            />
-          <h3>Mexican Max Poster</h3>
-          <p>
-            Wait your telling me I can get this and like hang it up in my casa?
           </p>
         </div>
       </section>
