@@ -18,7 +18,11 @@ import possession_poster from '../asset/possession_poster.png'
 import return_sender_bottle from '../assets/return_to_sender_bottle.png'
 import return_sender_poster from '../assets/return_to_sender_poster.png'
 
+import shock_jockey_bottle from '../assets/shock_jockey_bottle.png'
+import shock_jockey_poster from '../assets/shock_jockey.png'
 
+import undertow_bottle from '../assets/undertow_bottle.png'
+import undertow_poster from '../assets/undertow_poster.png'
 
 import './plasmid_test.css'
 
