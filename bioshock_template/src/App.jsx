@@ -3,6 +3,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 // imports needed for react router dom to work, first time using it
 import {Navbar} from "./components/navbar.jsx"
 
+// imports for the pages
+import Vigors from "./pages/vigor_testing.jsx";
+
+import Plasmids from "./pages/plasmid_test.jsx";
+
+
 function App() {
     return <div className="App">
 
@@ -16,8 +22,12 @@ function App() {
                 {/* cart page path */}
                 <Route path="/cart" />
 
-                {/* plasmid test page path */}
-                <Route path="/plasmid_test" />
+                {/* vigors test page path */}
+                <Route path="/Vigors_test" element={<Vigors />} />
+
+                {/* plasmids test page */}
+                <Route path="/plasmid_test" element={<Plasmids/>} />
+
             </Routes>
         </Router>
         </div>;
