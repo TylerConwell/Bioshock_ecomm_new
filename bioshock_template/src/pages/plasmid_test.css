@@ -23,6 +23,22 @@
   backface-visibility: hidden;
 }
 
+.plasmid-icon {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}
+
+
+.vigor-poster {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}
 
 .gallery-item {
   padding: 0.5rem;

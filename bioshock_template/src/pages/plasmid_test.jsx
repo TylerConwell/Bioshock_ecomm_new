@@ -63,35 +63,10 @@ function App() {
       <section className="gallery">
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
 
-          <img 
-          src= {plasmid_poster}
-          alt="classic plasmid poster"
-          />
-          <p>Try our Plasmids today!</p>
-
-          <img 
-          src= {pin_up_poster}
-          alt="pin up plasmid poster"
-          />
-          <p>The amazing power of plasmids!</p>
-
-          <img 
-          src= {all_in_one_poster}
-          alt="all in one plasmid poster"
-          />
-          <p>All the plasmids you need in one convenient bottle!</p>
-
-
-          {/* first index for the id spinning */}
-          <img 
-          src= {big_daddy}
-          alt="big daddy screen"
-          /> 
-
           {/* adding the vigor that will spin when clicked */}
           <img 
-            src={big_daddy_use} 
-            alt="big daddy plasmid" 
+            src={big_daddy} 
+            alt="big daddy screen" 
             className={`poster ${spin.has(0) ? 'spin' : ''}`}
             onClick={() => handleClick(0)} // on click start spinning
             onAnimationEnd={() => stopSpin(0)} // stop spinning
@@ -115,6 +90,7 @@ function App() {
           <img 
           src= {electro_icon}
           alt="electro plasmid icon"
+          className="plasmid-icon"
           />
 
           <img 
@@ -135,11 +111,13 @@ function App() {
           <img 
           src= {frost_gif}
           alt="frost plasmid gif"
+          className="plasmid-icon"
           />
 
           <img 
           src={winter_blast_icon}
           alt="winter/frost icon"
+          className="plasmid-icon"
           />
           
           <img 
@@ -160,6 +138,7 @@ function App() {
           <img
             src={incenerate_icon}
             alt="incenerate plasmid icon"
+            className="plasmid-icon"
           />
           
           <img 
@@ -179,6 +158,7 @@ function App() {
           <img 
             src={insect_icon}
             alt="insect swarm plasmid icon"
+            className="plasmid-icon"
           />
 
           <img 
@@ -200,6 +180,7 @@ function App() {
           <img
             src={sonic_boom_icon}
             alt="sonic boom plasmid icon"
+            className="plasmid-icon"
           />
 
           <img 
@@ -220,6 +201,7 @@ function App() {
           <img 
             src={telekensis_icon}
             alt="telekensis plasmid icon"
+            className="plasmid-icon"
           />
 
           <img 

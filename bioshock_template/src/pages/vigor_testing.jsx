@@ -64,6 +64,7 @@ function App() {
           <img 
           src= {bucking_poster}
           alt="bucking bronco poster"
+          className="vigor-poster"
           /> 
 
           {/* adding the vigor that will spin when clicked */}
@@ -85,6 +86,7 @@ function App() {
           <img 
           src= {charge_poster}
           alt="charge poster"
+          className="vigor-poster"
           />
 
           <img 
@@ -105,6 +107,7 @@ function App() {
           <img 
           src= {devils_poster}
           alt="devils kiss poster"
+          className="vigor-poster"
           />
           
           <img 
@@ -125,6 +128,7 @@ function App() {
           <img
             src={murder_crows}
             alt="murder of crows poster"
+            className="vigor-poster"
           />
           
           <img 
@@ -144,6 +148,7 @@ function App() {
           <img 
             src={possession_poster}
             alt="possession poster"
+            className="vigor-poster"
           />
 
           <img 
@@ -165,6 +170,7 @@ function App() {
           <img
             src={return_sender_poster}
             alt="return to sender poster"
+            className="vigor-poster"
           />
 
           <img 
@@ -185,6 +191,7 @@ function App() {
           <img 
             src={shock_jockey_poster}
             alt="shock  jockey poster"
+            className="vigor-poster"
           />
 
           <img 
@@ -204,6 +211,7 @@ function App() {
           <img 
             src={undertow_poster}
             alt="undertow poster"
+            className="vigor-poster"
           />
 
           <img 
