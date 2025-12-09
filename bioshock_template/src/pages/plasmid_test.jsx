@@ -22,6 +22,8 @@ import sonic_boom_screen from '../assets/plasmids/wind_plasmid.png'
 import telekensis_icon from '../assets/plasmids/telekensis_plasmid_icon.png'
 import telekensis from '../assets/plasmids/telekensis_screen_plasmid.png'
 
+import plasmid from '../assets/plasmids/basic_plasmid_bottle.png'
+
 import './plasmid_test.css'
 
 function App() {
@@ -72,6 +74,14 @@ function App() {
             onClick={() => handleClick(0)} // on click start spinning
             onAnimationEnd={() => stopSpin(0)} // stop spinning
           />
+
+          {/* plasmid bottle basic
+          <img 
+            src={plasmid}
+            alt="basic plasmid bottle"
+          /> */}
+
+
           <h3>Hypnotize Big Daddy</h3>
           <p>
             Cry out for Big Daddy's help, make him think you're a Little Sister. Watch as he fights to protect you.
