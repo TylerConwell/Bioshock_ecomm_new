@@ -23,6 +23,9 @@ import telekensis_icon from '../assets/plasmids/telekensis_plasmid_icon.png'
 import telekensis from '../assets/plasmids/telekensis_screen_plasmid.png'
 
 import plasmid from '../assets/plasmids/basic_plasmid_bottle.png'
+import plasmid_poster from '../assets/plasmids/classic_plasmid_poster.png'
+import pin_up_poster from '../assets/plasmids/pin_up_plasmid_poster.png'
+import all_in_one_poster from '../assets/plasmids/plasmids_all_in_one_poster.png'
 
 import './plasmid_test.css'
 
@@ -59,6 +62,25 @@ function App() {
 
       <section className="gallery">
         <div className="gallery-item hover:shadow-lg hover:shadow-blue-500">
+
+          <img 
+          src= {plasmid_poster}
+          alt="classic plasmid poster"
+          />
+          <p>Try our Plasmids today!</p>
+
+          <img 
+          src= {pin_up_poster}
+          alt="pin up plasmid poster"
+          />
+          <p>The amazing power of plasmids!</p>
+
+          <img 
+          src= {all_in_one_poster}
+          alt="all in one plasmid poster"
+          />
+          <p>All the plasmids you need in one convenient bottle!</p>
+
 
           {/* first index for the id spinning */}
           <img 
