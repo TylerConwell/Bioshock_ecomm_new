@@ -24,13 +24,28 @@
 }
 
 .plasmid-icon {
-  width: 100px;
+  width: 150px;
   height: auto;
   display: block;
   margin: 0 auto 1rem;
   object-fit: contain;
+  padding: 10px;
 }
 
+/* .plasmid-poster {
+  width: 130px;
+  height: auto;
+  display:flex;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+  padding: 10px;
+} */
+
+.plasmid-paragraph {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 
 .vigor-poster {
   width: 150px;

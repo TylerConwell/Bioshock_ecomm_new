@@ -216,6 +216,28 @@ function App() {
             Pick up big stuff with your mind. Throw them at your enemies. What else do you need to know?
           </p>
         </div>
+{/* 
+        <img 
+            src= {plasmid_poster}
+            alt="classic plasmid poster"
+            className="plasmid-poster"
+        />
+          <p>Try our Plasmids today!</p>
+
+          <img 
+            src= {pin_up_poster}
+            alt="pin up plasmid poster"
+            className="plasmid-poster"
+          />
+          <p>The amazing power of plasmids!</p>
+
+          <img 
+            src= {all_in_one_poster}
+            alt="all in one plasmid poster"
+            className="plasmid-poster"
+          />
+          <p>All the plasmids you need in one convenient bottle!</p>  */}
+
       </section>
     </>
   )
