@@ -14,9 +14,9 @@
 
 .product {
     border-radius: 15px;
-    width: 300px;
+    width: 250px;
     height: 350px;
-    margin: 100px;
+    margin: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;

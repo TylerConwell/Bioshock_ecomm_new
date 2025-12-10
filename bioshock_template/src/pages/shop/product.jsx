@@ -14,5 +14,7 @@ export const Product = (props) => {
                 {price} Atom
             </p>
         </div>
+
+        <button className="addToCartBttn">Add To Cart</button>
     </div>;
 }
