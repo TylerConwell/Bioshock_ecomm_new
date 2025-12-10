@@ -9,32 +9,39 @@ import {Cart} from "./pages/cart/cart"
 // imports for the pages for testing the vigors
 import Vigors from "./pages/vigor_testing.jsx";
 import Plasmids from "./pages/plasmid_test.jsx";
+import { ShoppingBag } from "phosphor-react"
+import { ShopContextProvider } from "./context/shop-context.jsx"
 
 
 function App() {
-    return <div className="App">
+    return (
+        <div className="App">
 
-        <Router>
-            {/* adding the navbar above to its in all pages */}
-            <Navbar />
+            <ShopContextProvider>
 
-            <Routes>
-                {/* main page or shop of the products */}
-                {/* also made it an empty tag "/" */}
-                <Route path="/" element={<Shop />}  />
+                <Router>
+                    {/* adding the navbar above to its in all pages */}
+                    <Navbar />
 
-                {/* cart page path */}
-                <Route path="/cart" element={<Cart />} />
+                    <Routes>
+                        {/* main page or shop of the products */}
+                        {/* also made it an empty tag "/" */}
+                        <Route path="/" element={<Shop />}  />
 
-                {/* vigors test page path */}
-                <Route path="/Vigors_test" element={<Vigors />} />
+                        {/* cart page path */}
+                        <Route path="/cart" element={<Cart />} />
 
-                {/* plasmids test page */}
-                <Route path="/plasmid_test" element={<Plasmids/>} />
+                        {/* vigors test page path */}
+                        <Route path="/Vigors_test" element={<Vigors />} />
 
-            </Routes>
-        </Router>
-    </div>;
+                        {/* plasmids test page */}
+                        <Route path="/plasmid_test" element={<Plasmids/>} />
+
+                    </Routes>
+                </Router>
+            </ShopContextProvider>
+        </div>
+    );
 }
 
 export default App;
