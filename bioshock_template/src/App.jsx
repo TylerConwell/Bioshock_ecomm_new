@@ -2,6 +2,9 @@ import "./App.css"
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 // imports needed for react router dom to work, first time using it
 import {Navbar} from "./components/navbar.jsx"
+import {Shop} from "./pages/shop/shop"
+import {Cart} from "./pages/cart/cart"
+
 
 // imports for the pages for testing the vigors
 import Vigors from "./pages/vigor_testing.jsx";
@@ -17,9 +20,10 @@ function App() {
             <Routes>
                 {/* main page or shop of the products */}
                 {/* also made it an empty tag */}
-                <Route path="/" />
+                <Route path="/" element={<Shop />}  />
+
                 {/* cart page path */}
-                <Route path="/cart" />
+                <Route path="/cart" element={<Cart />} />
 
                 {/* vigors test page path */}
                 <Route path="/Vigors_test" element={<Vigors />} />
