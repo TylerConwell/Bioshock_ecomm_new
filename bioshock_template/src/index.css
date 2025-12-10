@@ -25,7 +25,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* use justif not place items center to make header nav bar in the top duh */
+  justify-content: center;
+  align-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
 }

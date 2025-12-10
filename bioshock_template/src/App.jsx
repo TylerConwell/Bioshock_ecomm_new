@@ -17,9 +17,10 @@ function App() {
         <Router>
             {/* adding the navbar above to its in all pages */}
             <Navbar />
+
             <Routes>
                 {/* main page or shop of the products */}
-                {/* also made it an empty tag */}
+                {/* also made it an empty tag "/" */}
                 <Route path="/" element={<Shop />}  />
 
                 {/* cart page path */}
@@ -33,7 +34,7 @@ function App() {
 
             </Routes>
         </Router>
-        </div>;
+    </div>;
 }
 
 export default App;
