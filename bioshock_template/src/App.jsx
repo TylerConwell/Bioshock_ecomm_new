@@ -3,9 +3,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 // imports needed for react router dom to work, first time using it
 import {Navbar} from "./components/navbar.jsx"
 
-// imports for the pages
+// imports for the pages for testing the vigors
 import Vigors from "./pages/vigor_testing.jsx";
-
 import Plasmids from "./pages/plasmid_test.jsx";
 
 
