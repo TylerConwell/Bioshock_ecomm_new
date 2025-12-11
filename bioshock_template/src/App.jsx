@@ -9,31 +9,33 @@ import {Cart} from "./pages/cart/cart"
 // imports for the pages for testing the vigors
 import Vigors from "./pages/vigor_testing.jsx";
 import Plasmids from "./pages/plasmid_test.jsx";
+import { ShopContextProvider } from "./context/shop-context.jsx"
 
 
 function App() {
     return <div className="App">
+        <ShopContextProvider>
+            <Router>
+                {/* adding the navbar above to its in all pages */}
+                <Navbar />
 
-        <Router>
-            {/* adding the navbar above to its in all pages */}
-            <Navbar />
+                <Routes>
+                    {/* main page or shop of the products */}
+                    {/* also made it an empty tag "/" */}
+                    <Route path="/" element={<Shop />}  />
 
-            <Routes>
-                {/* main page or shop of the products */}
-                {/* also made it an empty tag "/" */}
-                <Route path="/" element={<Shop />}  />
+                    {/* cart page path */}
+                    <Route path="/cart" element={<Cart />} />
 
-                {/* cart page path */}
-                <Route path="/cart" element={<Cart />} />
+                    {/* vigors test page path */}
+                    <Route path="/Vigors_test" element={<Vigors />} />
 
-                {/* vigors test page path */}
-                <Route path="/Vigors_test" element={<Vigors />} />
+                    {/* plasmids test page */}
+                    <Route path="/plasmid_test" element={<Plasmids/>} />
 
-                {/* plasmids test page */}
-                <Route path="/plasmid_test" element={<Plasmids/>} />
-
-            </Routes>
-        </Router>
+                </Routes>
+            </Router>
+        </ShopContextProvider>
     </div>;
 }
 
