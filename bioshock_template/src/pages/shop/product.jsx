@@ -12,9 +12,17 @@ export const Product = (props) => {
     }
 
     catch (error) {
-        // just keep going
+        // just keep going seems fine to displayS
     }
     
+
+    try {
+        const cartItemAmount = cartItems[id]
+    }
+    
+    catch (error) {
+        // well it seems to be working
+    }
 
     return (
         <div className="product">
@@ -30,7 +38,10 @@ export const Product = (props) => {
                 </p>
             </div>
 
-            <button className="addToCartBttn" onclick={() => addToCart(id)}>Add To Cart</button>
+            <button className="addToCartBttn" onclick={() => addToCart(id)}>
+                {/* Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>} */}
+                Add To Cart
+            </button>
         </div>
     );
 }
