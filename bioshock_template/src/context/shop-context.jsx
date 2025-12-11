@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {createContext, useState} from "react";
 
-export const shopContextProvider = () => {
+export const ShopContext = createContext(null);
+
+export const ShopContextProvider = (props) => {
+    const [cartItem, setCartItems] = useState();
     return (
-        <div>
-            shop-context
-        </div>
-    )
-}
+        <ShopContext.Provider>
+            {
+                props.children
+            }
+        </ShopContext.Provider>
+    );
+};
+
+// left off on 32:14 in video
