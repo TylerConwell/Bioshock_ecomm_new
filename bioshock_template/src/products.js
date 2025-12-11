@@ -7,8 +7,6 @@ import sonic_boom from "./assets/plasmids/wind_plasmid.png";
 import telekensis from "./assets/plasmids/telekensis_screen_plasmid.png";
 
 
-
-
 export const PRODUCTS = [
     {
         id: 1,
