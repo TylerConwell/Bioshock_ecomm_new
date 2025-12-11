@@ -3,7 +3,18 @@ import {ShopContext} from "../../context/shop-context"
 
 export const Product = (props) => {
     const {id, productName, price, productImage} = props.data;
-    // const {addToCart} = useContext(shopContext);  // for some reason this on will not display the code
+    // making a try catch method so my day isnt ruined following along with the video
+    try {
+        const {addToCart} = useContext(shopContext);  // for some reason this on will not display the code
+        return (
+         console.error("oh boy", error, errorInfo)
+        );
+    }
+
+    catch (error) {
+        // just keep going
+    }
+    
 
     return (
         <div className="product">
