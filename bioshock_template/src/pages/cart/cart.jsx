@@ -6,8 +6,8 @@ import { CartItem } from "./cart-item";
 export const Cart = () => {
     const {cartItems} = useContext(ShopContext);
     // left off on 47:20 in video
-    return 
-    (
+    // clicking on the shop icon just gones black now??
+    return (
         <div className="cart">
             <div>
                 <h1>

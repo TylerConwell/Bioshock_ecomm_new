@@ -9,7 +9,7 @@ import {Cart} from "./pages/cart/cart"
 // imports for the pages for testing the vigors
 import Vigors from "./pages/vigor_testing.jsx";
 import Plasmids from "./pages/plasmid_test.jsx";
-import { ShopContextProvider } from "./context/shop-context.jsx"
+import {ShopContextProvider} from "./context/shop-context.jsx"
 
 
 function App() {
