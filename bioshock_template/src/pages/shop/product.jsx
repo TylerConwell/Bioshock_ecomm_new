@@ -5,7 +5,7 @@ export const Product = (props) => {
     const {id, productName, price, productImage} = props.data;
     // making a try catch method so my day isnt ruined following along with the video
     try {
-        const {addToCart} = useContext(shopContext);  // for some reason this on will not display the code
+        const {addToCart, cartItems} = useContext(ShopContext);  // for some reason this on will not display the code
         return (
          console.error("oh boy", error, errorInfo)
         );
@@ -38,7 +38,7 @@ export const Product = (props) => {
                 </p>
             </div>
 
-            <button className="addToCartBttn" onclick={() => addToCart(id)}>
+            <button className="addToCartBttn" onClick={() => addToCart(id)}>
                 {/* Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>} */}
                 Add To Cart
             </button>
