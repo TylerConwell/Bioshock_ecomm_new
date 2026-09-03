@@ -32,8 +32,7 @@ Myself (Tyler)
 @TylerConwell (github)
 
 
-<img width="469" height="419" alt="image" src="
-https://github.com/TylerConwell/Bioshock_ecomm/blob/newBranch_try%232/bioshock_template/src/assets/website_images/bioshock_vigors_wordpress.png" />
+<img width="469" height="419" alt="image" src="https://github.com/TylerConwell/Bioshock_ecomm/blob/newBranch_try%232/bioshock_template/src/assets/website_images/bioshock_vigors_wordpress.png" />
 
 
 <img width="467" height="353" alt="image" src="https://github.com/TylerConwell/Bioshock_ecomm/blob/newBranch_try%232/bioshock_template/src/assets/website_images/bioshock_wordpress.png" />
