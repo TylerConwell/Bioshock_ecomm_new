@@ -34,7 +34,7 @@ export const Product = (props) => {
                 </p>
 
                 <p>
-                    {price} Atom
+                    {price} Atom/Silver Eagles
                 </p>
             </div>
 
